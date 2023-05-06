@@ -17,6 +17,7 @@ body{
           font-size: 18px;
           font-family: sans-serif;
           position: relative;
+          overflow-x: hidden;
 }
 .header{
           height: 4rem;
@@ -213,12 +214,12 @@ form p{
           padding-left: 0.5rem;
           border: none;
           outline: none;
-          width: 300px;
+          width: 250px;
           border-radius: 0.5rem;
 
 }
 textarea{
-          width: 300px;
+          width: 250px;
           resize: none;
 }
 form> button{
