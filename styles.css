@@ -29,6 +29,7 @@ body{
           justify-content: space-between;
           align-items: center;
           padding: 0px 0.75rem;
+          width: 100vw;
 }
 .logo {
           width: 4rem;
@@ -197,7 +198,7 @@ form p{
 .sender{
           display: flex;
           flex-direction: column;
-          margin-left: 2.5rem;
+          margin-left: 2rem;
 }
 form p{
           text-align: center;
