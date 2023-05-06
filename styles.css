@@ -1,7 +1,7 @@
 :root{
           --primary-color:#100a31;
           --secondary-color:#9e0575;
-          --secondary-color-75:#d841b0;
+          --secondary-color-75: #d841b0;
           --text-color:#ffffff;
           --text-color-75: #f9f5f5;
 }
@@ -9,16 +9,21 @@
           padding: 0px;
           margin: 0px;
           box-sizing: border-box;
+          scroll-behavior: smooth;
 }
 body{
           background-color: var(--primary-color);
           color: var(--text-color);
-          font-size: 20px;
+          font-size: 18px;
+          font-family: sans-serif;
+          position: relative;
 }
 .header{
           height: 4rem;
-          background-color: var(--secondary-color);
-          position: relative;
+          background-image: linear-gradient(to right, var(--secondary-color),var(--secondary-color-75));
+          position: sticky;
+          top: 0;
+          left: 0;
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -62,19 +67,200 @@ body{
           display: inline-block;
           width: 100%;
           text-align: center;
-          font-size: 2rem;
+          font-size: 1.5rem;
+          font-weight: 600;
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
+          text-transform: uppercase;
+          color: var(--primary-color);
 }
 .mobile-menu li a:hover{
           background-color: var(--secondary-color);
+          color: var(--text-color-75);
 }
 .menu-icon,.close-icon i{
           font-size: 2rem;
+          cursor: pointer;
 }
 .close-icon{
          float: right;
          margin-right: 1rem;
          margin-top: -2rem;
          margin-bottom: 2rem;
+}
+.main{
+          height: auto;
+}
+.main button{
+          margin-bottom: 4rem;
+          padding: 0.5rem 1rem;
+          border: none;
+          outline: none;
+          border-radius: 0.85rem;
+          font-weight: 400;
+          font-size: 1.25rem;
+          background-color: var(--secondary-color);
+          color: var(--text-color);
+          margin-top: 2rem;
+          width: 10rem;
+          cursor: pointer;
+}
+.main button:hover{
+          background-color: var(--secondary-color-75);
+}
+.main-content{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+}
+.photo img{
+          object-fit: cover;
+          width: 100vw;
+}
+.content{
+          padding-top: 2rem;
+          text-align: center;
+}
+.content h3,h1,p{
+          margin-bottom: 1.25rem;
+}
+.content h1,p{
+          font-size: 2.5rem;
+}
+span{
+          color: var(--secondary-color-75);
+}
+.about{
+          background-color: var(--secondary-color-75);
+          padding-bottom: 1.5rem;
+          padding-top: 1rem;
+}
+.about-content{
+          padding: 0 1rem;
+}
+.about-content h1 {
+          text-align: center;
+          font-size: 2.5rem;
+          font-weight: 700;
+}
+.about-content p{
+          color: var(--primary-color);
+          font-size: 1rem;
+          line-height: 1.5rem;
+          font-weight: 500;
+}
+.projects{
+          padding-bottom: 2rem;
+          padding-top: 1rem;
+}
+.projects-content div{
+          background-color: var(--secondary-color-75);
+          height: 8rem;
+          margin-bottom: 2rem;
+          margin-left: 1rem;
+          margin-right: 1rem;
+}
+.project{
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: center;
+}
+
+.projects-content div>h3{
+          font-size: 1.25rem;
+          margin-top: 2rem;
+}
+.links{
+          margin-top: 2rem;
+}
+.links a{
+          text-decoration: none;
+          color: var(--primary-color);
+}
+.links a:hover{
+          color: var(--text-color);
+}
+.contact{
+          padding-bottom: 2.5rem;
+
+}
+.contact h1, .projects h1{
+          text-align: center;
+          font-size: 2.5rem;
+          font-weight: 700;
+}
+form p{
+          font-size: 1.25rem;
+}
+.sender{
+          display: flex;
+          flex-direction: column;
+          margin-left: 2.5rem;
+}
+form p{
+          text-align: center;
+}
+.sender label{
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
+          margin-top: 0.5rem;
+}
+.sender input{
+          font-size: 1.25rem;
+          padding-top:0.35rem;
+          padding-bottom: 0.35rem;
+          padding-left: 0.5rem;
+          border: none;
+          outline: none;
+          width: 300px;
+          border-radius: 0.5rem;
+
+}
+textarea{
+          width: 300px;
+          resize: none;
+}
+form> button{
+          padding: 0.5rem 1rem;
+          border: none;
+          outline: none;
+          border-radius: 0.85rem;
+          font-weight: 400;
+          font-size: 1.25rem;
+          background-color: var(--secondary-color);
+          color: var(--text-color);
+          margin-top: 1.5rem;
+          float: right;
+          margin-right: 3rem;
+          cursor: pointer;
+}
+.form>button:hover{
+          background-color: var(--secondary-color-75);
+}
+.social{
+          margin-top: 8rem;
+          display: flex;
+          justify-content: space-evenly;
+}
+.social>i, .social>a {
+          font-size: 1.5rem;
+          cursor: pointer;
+}
+.social>a{
+          color: var(--text-color);
+}
+.social>a:visited{
+          color: var(--text-color);
+}
+footer{
+          background-color: var(--secondary-color);
+          height: 5rem;
+          padding-top: 2rem;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+}
+footer>i{
+          font-size: 0.85rem;
 }
