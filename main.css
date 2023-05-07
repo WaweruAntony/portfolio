@@ -1,0 +1,16 @@
+*{
+          font-size: 18px;
+          font-family: sans-serif;
+}
+.hide-menu{
+          margin-left: -20rem;
+          transition: 0.5s ease-out;
+}
+.show-menu{
+          margin-left: 0rem;
+          transition: 0.5s ease-in-out;
+}
+.hide-menu-icon{
+          margin-top: -20rem;
+          transition: 0.1s ease-in-out;
+}
