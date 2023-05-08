@@ -14,3 +14,6 @@
           margin-top: -20rem;
           transition: 0.1s ease-in-out;
 }
+textarea{
+          resize: none;
+}
