@@ -1,0 +1,288 @@
+/* GENERAL STYLES */
+:root {
+     --primary-color: #0047AB;
+     --secondary-color: #357ce0;
+     --text-color: white;
+     --text-color-2: orange;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+html {
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 18px;
+     scroll-behavior: smooth;
+}
+
+body {
+     width: 100%;
+}
+
+/* HEADER SECTION STYLES */
+header {
+     height: 12vh;
+     width: 100%;
+     background-color: var(--primary-color);
+     position: sticky;
+     top: 0;
+     right: 0;
+
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 1rem; 
+}
+
+.logo {
+     color: var(--text-color);
+}
+
+.logo h1 {
+     font-size: 1.5rem;
+}
+
+.logo h1 span {
+     color: var(--text-color-2);
+}
+
+.nav-menu {
+     list-style: none;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     /* margin-right: 0.75rem; */
+}
+
+.nav-menu li {
+     margin-right: 0.75rem;
+}
+
+.nav-menu li a {
+     color: var(--text-color);
+     text-decoration: none;
+     font-size: 1.25rem;
+     padding: 0.25rem 0.75rem;
+}
+
+.nav-menu li a:hover, .nav-menu li a:focus, .active {
+     text-decoration:  underline var(--text-color-2);
+     text-underline-offset: 7px;
+     text-decoration-thickness: 4px;
+}
+
+.hamburger-menu i {
+     color: var(--text-color);
+     font-size: 2rem;
+}
+
+.menu-links {
+     position: absolute;
+     right: 0;
+     top: 10vh;
+     background-color: var(--primary-color);
+     list-style: none;
+     width: 50%;
+     height: 35vh;
+     display: none;
+}
+
+.menu-links-open {
+     display: block;
+}
+
+.menu-links li a {
+     color: var(--text-color);
+     text-decoration: none;
+     display: block;
+     padding: 0.5rem 0.75rem;
+}
+
+.menu-links li a:hover {
+     background-color: var(--secondary-color);
+}
+
+/* MAIN SECTION STYLES */
+.main section {
+     width: 100%;
+}
+
+/* home page */
+.home {
+     background-color: var(--secondary-color);
+}
+
+/* profile picture */
+.profile img {
+     width: 100%;
+     object-fit: contain;
+     border-bottom-right-radius: 1.5rem;
+     border-bottom-left-radius: 1.5rem;
+}
+
+/* profile info */
+.profile__info {
+     height: 50vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+}
+/* profile info intro */
+.profile__info__intro {
+     text-align: center;
+     
+}
+
+.profile__info__intro h1 {
+     color: var(--text-color);
+     margin-top: 0.75rem;
+     margin-bottom: 0.75rem;
+}
+
+.profile__info__intro p {
+     font-size: 1.5rem;
+}
+
+.profile__info__intro p strong {
+     color: var(--text-color-2);
+     font-size: 1.5rem;
+}
+
+.profile__info__btn button {
+     padding: 0.5rem 0.75rem;
+     border: 2px solid var(--text-color-2);
+     border-radius: 0.5rem;
+     font-size: 1rem;
+     cursor: pointer;
+     transition: all 0.5s ease;
+}
+
+.profile__info__btn button:last-child {
+     background-color: var(--text-color-2);
+}
+
+.profile__info__btn button:last-child:hover {
+     background-color: var(--text-color);
+}
+
+.profile__info__btn button:first-child:hover {
+     background-color: var(--text-color-2);
+}
+
+/* about section */
+.about {
+     padding: 2.5rem 0.5rem 0; 
+}
+
+.about h1 {
+     text-align: center;
+     font-size: 1.75rem;
+     margin-bottom: 2rem;
+     color: var(--text-color-2);
+}
+
+.about__me p {
+     padding-bottom: 0.5rem;
+}
+
+/* project  */
+.projects {
+     padding-top: 2.5rem;
+     padding-bottom: 0.5rem;
+     background-color: var(--secondary-color);
+     border-radius: 0.5rem;
+}
+
+.projects h1 {
+     text-align: center;
+     color: var(--text-color);
+     margin-bottom: 1.5rem;
+}
+.project__info {
+     height: 35vh;
+     width: 90%;
+     border-radius: 0.5rem;
+     margin: 0.5rem auto;
+     background-color: var(--text-color-2);
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     padding-bottom: 0.5rem;
+}
+
+.project__info__1 h2 {
+     text-align: center;
+     color: var(--text-color);
+}
+
+.project__info__1 p {
+     padding-left: 0.5rem;
+}
+
+.project__info__btn button {
+     padding: 0.25rem 0.75rem;
+     background-color: var(--primary-color);
+     color: var(--text-color);
+     border: none;
+     outline: none;
+     border-radius: 0.5rem;
+}
+
+/* contact */
+.contact {
+     margin-bottom: 1rem;
+}
+.contact h1 {
+     text-align: center;
+     padding: 0.5rem 0;
+}
+
+.contact__me i {
+     font-size: 2rem;
+     cursor: pointer;
+}
+
+.fa-facebook {
+     color: var(--primary-color);
+}
+
+.fa-twitter {
+     color: var(--secondary-color);
+}
+
+.fa-whatsapp {
+     color: rgb(42, 223, 42);
+}
+
+.fa-instagram {
+     color: orangered;
+}
+
+.fa-linkedin {
+     color: var(--secondary-color);
+}
+
+.fa-envelope {
+     color: red;
+}
+
+.contact__me {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+/* FOOTER SECTION STYLES */
+footer {
+     height: 15vh;
+     color: var(--text-color);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: var(--primary-color);
+}

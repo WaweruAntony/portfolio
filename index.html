@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Portfolio</title>
+     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="media-queries.css">
+     <link rel="stylesheet" href="./assets/fontawesome-free-6.5.1-web/css/all.css">
+</head>
+<body>
+     <header>
+          <div class="logo">
+               <h1>Ak-<span>solutions</span></h1>
+          </div>
+          <ul class="nav-menu">
+               <li><a href="#home" id="home-link" onclick="showActiveLink()">Home</a></li>
+               <li><a href="#about" id="about-link" onclick="showActiveLink()">About me</a></li>
+               <li><a href="#projects" id="projects-link" onclick="showActiveLink()">Projects</a></li>
+               <li><a href="#contact" id="contact-link" onclick="showActiveLink()">Contact me</a></li>
+          </ul>
+          <div class="hamburger-menu">
+               <i class="fa-solid fa-bars" onclick="toggleMenu()" id="menu"></i>
+          </div>
+          <ul class="menu-links" id="menu-links">
+               <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+               <li><a href="#about" onclick="toggleMenu()">About me</a></li>
+               <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+               <li><a href="#contact" onclick="toggleMenu()">Contact me</a></li>
+     </ul>
+     </header>
+     <main>
+          <section class="home" id="home">
+               <div class="profile" id="profile">
+                    <img src="./assets/profile.jpg" alt="my profile pic">
+               </div>
+               <div class="profile__info" id="profile__info">
+                    <div class="profile__info__intro">
+                         <p>Hi, my name is</p>
+                         <h1>Antony Kariuki</h1>
+                         <p>I`m a <strong>software engineer</strong></p>
+                    </div>
+                    <div class="profile__info__btn">
+                         <button>Download CV</button>
+                         <button>Read more</button>
+                    </div>
+               </div>
+          </section>
+          <section class="about" id="about">
+               <h1>About me</h1>
+               <div class="about__me">
+                    <p>Thank you for your time to know me more. My name is Antony Kariuki.
+                         I was born in a village called Ndindiruku located in Mwea constituency, Kirinyaga county in Kenya
+                    </p>
+                    <p>
+                         I graduated in the year 2019 from the Technical University
+                         of Mombasa. I pursued BSc in Statistics and Computer Science
+                         and got second class honors (upper division). I have programming
+                         skills for Backend development using Java with Spring Boot framework
+                         and Frontend development using JavaScript with React framework.
+                         For databases, am proficient with RDBMs i.e MySql, PostreSQL ,Oracle
+                         and non-RDBMs with MongoDB.
+                    </p>
+                    <p>
+                         In my early years, I always enjoyed solving my colleague`s problems.
+                         Still now with the same spirit and now equiped with IT skills, I enjoy solving
+                         day-to-day challenges using the technologies.
+                    </p>
+               </div>
+          </section>
+          <section class="projects" id="projects">
+               <h1>Projects</h1>
+               <div class="projects-box">
+                    <div class="project__info">
+                         <div class="project__info__1">
+                              <h2>Farm ERP</h2>
+                              <p>The system is designed to cover all the operations
+                                   of the farms,packhouse,finance,HR and markets.
+                              </p>
+                         </div>
+                         <div class="project__info__btn">
+                              <button>GitHub</button>
+                              <button>Live</button>
+                         </div>
+                    </div>
+                    <div class="project__info">
+                         <div class="project__info__1">
+                              <h2>Hospital ERP</h2>
+                              <p>The system is designed to cover all the operations
+                                   of the admissions,store, <br /> HR related roles etc.
+                              </p>
+                         </div>
+                         <div class="project__info__btn">
+                              <button>GitHub</button>
+                              <button>Live</button>
+                         </div>
+                    </div>
+                    <div class="project__info">
+                         <div class="project__info__1">
+                              <h2>School ERP</h2>
+                              <p>The system is designed to cover all the operations
+                                   of the school i.e adminstration,finance, <br /> and library/store.
+                              </p>
+                         </div>
+                         <div class="project__info__btn">
+                              <button>GitHub</button>
+                              <button>Live</button>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="contact" id="contact">
+               <h1>Contact me via</h1>
+               <div class="contact__me">
+                    <i class="fa-brands fa-facebook" onclick="location.href='https://web.facebook.com/antony.kariuki.353' "></i>
+                    <i class="fa-brands fa-twitter" onclick="location.href='https://twitter.com/WaweruAntonyKe' "></i>
+                    <i class="fa-brands fa-whatsapp" onclick="location.href='https://wa.me/+254707562277' "></i>
+                    <i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/j.antony712/' "></i>
+                    <i class="fa-brands fa-linkedin" onclick="location.href='https://www.linkedin.com/in/antony-waweru-20560361/' "></i>
+                    <i class="fa-solid fa-envelope" onclick="location.href='mailto:j.antony712@gmail.com' "></i>
+               </div>
+          </section>
+     </main>
+     <footer>
+          <p>Ak-solutions &copy;  <span id="year"></span>. All rights reserved.</p>
+     </footer>
+     <script src="./scripts.js"></script>
+</body>
+</html>
