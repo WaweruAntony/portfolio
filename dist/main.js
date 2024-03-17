@@ -1,0 +1,1 @@
+window.addEventListener("load",(()=>(()=>{console.log("running..");const e=document.getElementById("year");let n=(new Date).getFullYear();e.innerHTML=n})()));
