@@ -50,6 +50,12 @@
      }
 }
 
+@media screen and (max-width: 300px) {
+     footer p {
+          font-size: 0.75rem;
+     }
+}
+
 @media screen and (max-width: 250px) {
      .logo h1 {
           font-size: 0.75rem;
