@@ -50,7 +50,7 @@
      }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
      footer p {
           font-size: 0.75rem;
      }
