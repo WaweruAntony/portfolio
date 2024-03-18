@@ -27,4 +27,14 @@ const toggleMenu = (e) => {
   menuLinks.classList.toggle("menu-links-open");
 };
 
-const showActiveLink = () => {};
+// add active class to the active link
+const showActiveLink = (e) => {
+  menuLinks.forEach((link) => link.classList.remove("active"));
+  e.target.classList.toggle("active");
+  console.log(e.target);
+};
+const menuLinks = document.querySelectorAll("a[id ^='link']");
+// adding event listener to the links
+menuLinks.forEach((link) => {
+  link.addEventListener("click", showActiveLink);
+});

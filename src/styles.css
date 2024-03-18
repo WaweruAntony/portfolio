@@ -54,7 +54,6 @@ header {
      display: flex;
      justify-content: space-between;
      align-items: center;
-     /* margin-right: 0.75rem; */
 }
 
 .nav-menu li {
@@ -68,7 +67,7 @@ header {
      padding: 0.25rem 0.75rem;
 }
 
-.nav-menu li a:hover, .nav-menu li a:focus, .active {
+.nav-menu li a:hover, .nav-menu li a:focus , .nav-menu li a.active{
      text-decoration:  underline var(--text-color-2);
      text-underline-offset: 7px;
      text-decoration-thickness: 4px;
