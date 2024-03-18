@@ -27,6 +27,10 @@ const toggleMenu = (e) => {
   menuLinks.classList.toggle("menu-links-open");
 };
 
+// add event to all links in the menu instead of add it to each link individually - by use of event bubbling
+const Links = document.getElementById("menu-links");
+Links.addEventListener("click", toggleMenu);
+
 // add active class to the active link
 const showActiveLink = (e) => {
   menuLinks.forEach((link) => link.classList.remove("active"));
