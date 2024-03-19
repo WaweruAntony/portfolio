@@ -31,14 +31,14 @@ const toggleMenu = (e) => {
 const Links = document.getElementById("menu-links");
 Links.addEventListener("click", toggleMenu);
 
+const menuLinks = document.querySelectorAll("a[id ^='link']");
+
 // add active class to the active link
 const showActiveLink = (e) => {
   menuLinks.forEach((link) => link.classList.remove("active"));
   e.target.classList.toggle("active");
   console.log(e.target);
 };
-const menuLinks = document.querySelectorAll("a[id ^='link']");
-// adding event listener to the links
-menuLinks.forEach((link) => {
-  link.addEventListener("click", showActiveLink);
-});
+
+// adding event listener to the links using event delegation - event bubbling
+menuLinks.addEventListener("click", showActiveLink);
