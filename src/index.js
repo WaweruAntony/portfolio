@@ -36,7 +36,7 @@ const showActiveLink = (e) => {
   menuLinks.forEach((link) => link.classList.remove("active"));
   e.target.classList.toggle("active");
   console.log(e.target);
-  console.log("function is called..");
+  console.log("function is called now..");
 };
 
 // adding event listener to the links using event delegation - event bubbling
