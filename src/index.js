@@ -15,8 +15,6 @@ const toggleMenu = (e) => {
   const menuLinks = document.getElementById("menu-links");
   const isMenuOpened = menu.classList.contains("fa-bars");
 
-  console.log(window.innerWidth);
-
   if (isMenuOpened) {
     menu.classList.remove("fa-bars");
     menu.classList.add("fa-xmark");
@@ -38,7 +36,9 @@ const showActiveLink = (e) => {
   menuLinks.forEach((link) => link.classList.remove("active"));
   e.target.classList.toggle("active");
   console.log(e.target);
+  console.log("function is called..");
 };
 
 // adding event listener to the links using event delegation - event bubbling
-menuLinks.addEventListener("click", showActiveLink);
+const navMenu = document.querySelector(".nav-menu");
+navMenu.addEventListener("click", showActiveLink);
